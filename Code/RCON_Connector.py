@@ -18,7 +18,10 @@ OPTION = int(input("Option Number: ")) # The command selection (will come from a
 TAGS = input("Additional options: ") # Any additional options for the command that is to be run (will also come from website)
 
 async def main(IP: str, PORT: int, PASSWORD: str, COMMAND: str) -> str:
-    """Core function to make the connection and send the command. All inputs are strings apart from PORT, which is an integer"""
+    """Core function to make the connection and send the command. All inputs are strings apart from PORT, which is an integer.
+    Arguments:
+        IP (str): this is the IP address
+        PORT [int]: PORT"""
     # Start the client connection
     client = Client(IP, PORT, PASSWORD)
     await client.connect()
