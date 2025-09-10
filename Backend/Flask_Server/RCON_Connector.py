@@ -2,9 +2,6 @@
 # Description - Program to execute various commands using rcon
 # Credits:
 #  - Example aio-mc-rcon from Iapetus-11 [https://github.com/Iapetus-11]
-#  - 
-#  - 
-#  - 
 
 # Import the rcon module and asyncio for better I/O performance
 from aiomcrcon import Client

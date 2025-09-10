@@ -1,0 +1,1 @@
+Please make sure you have read the documentation adn have moved all of your server files into this folder - not just the server.jar file
