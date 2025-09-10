@@ -4,7 +4,7 @@
 <head>
   <!-- Define the font to be used for the website -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  
+
   <!-- Import the Material Design elements using esm.run to avoid having to download the elements with npm -->
   <script type="importmap">
     {
@@ -13,7 +13,7 @@
       }
     }
   </script>
-  
+
   <!-- Don't know what this does but is probably important -->
   <script type="module">
     import '@material/web/all.js';
@@ -21,14 +21,12 @@
 
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
-  
+
   <!-- Define the location of the style sheet used for formatting -->
-  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 
 <!-- Start of the actual website elements -->
 <body>
-  <form action="http://127.0.0.1:5000/about">
-    <md-elevated-button type="submit">freeCodeCamp</md-elevated-button>
-  </form>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/ban/ImperialFir6997">Ban ImperialFir6997</md-elevated-button>
 </body>

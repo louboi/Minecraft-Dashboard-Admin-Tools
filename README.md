@@ -44,4 +44,28 @@ These instruction will also show you how to activate a virtual environment. **IM
 2. Staying in yor terminal you can install your other packages by running each of the commands below
    1. Aio-Mc-Rcon
    2. flask
-   3. 
+
+## Project Roadmap
+None of these are an absolute definite (except the commands), however, they are being considered. Do not expect any of these features to be added quickly. If you are desperate for a feature, or have an idea for one that could be added, then create and issue and I will try and address it asap.
+
+### User management page
+These are potential features relating to the User management page (Called Userpage.html).
+
+#### Commands:
+1. ban
+2. op
+3. deop
+4. give
+5. kick
+6. kill
+7. pardon
+
+#### Stats:
+
+1. Last played
+2. Total playtime
+3. Past bans/kicks
+4. in game stats
+   1. Health
+   2. XP-Level
+
