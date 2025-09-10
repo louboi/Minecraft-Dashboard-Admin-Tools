@@ -1,0 +1,34 @@
+<title>Dashboard Home</title>
+
+<!-- Importing and preparing elements such as the font and the material design pack -->
+<head>
+  <!-- Define the font to be used for the website -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Import the Material Design elements using esm.run to avoid having to download the elements with npm -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  
+  <!-- Don't know what this does but is probably important -->
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  
+  <!-- Define the location of the style sheet used for formatting -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<!-- Start of the actual website elements -->
+<body>
+  <form action="http://127.0.0.1:5000/about">
+    <md-elevated-button type="submit">freeCodeCamp</md-elevated-button>
+  </form>
+</body>
