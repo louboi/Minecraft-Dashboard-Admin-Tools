@@ -1,2 +1,37 @@
 <title>Manage User {{uname}}</title>
-<h1>Hello {{uname}}!</h1>
+
+<!-- Importing and preparing elements such as the font and the material design pack -->
+<head>
+  <!-- Define the font to be used for the website -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Import the Material Design elements using esm.run to avoid having to download the elements with npm -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+
+  <!-- Don't know what this does but is probably important -->
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+
+  <!-- Define the location of the style sheet used for formatting -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<!-- Start of the actual website elements -->
+<body>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/ban">Ban {{uname}}</md-elevated-button>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/pardon">Pardon {{uname}}</md-elevated-button>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/op">Make {{uname}} an operator</md-elevated-button>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/deop">Remove {{uname}} as an operator</md-elevated-button>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/kick">Kick {{uname}}</md-elevated-button>
+  <md-elevated-button type="submit" href="http://127.0.0.1:5000/user/{{uname}}/kill">Dispatch of {{uname}}</md-elevated-button>
+</body>
