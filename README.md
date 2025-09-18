@@ -23,7 +23,7 @@ If you encounter an errors with any of these steps, please refer yourself to te 
 1. Please download the most recent version of the server files from [Minecraft.net](https://www.minecraft.net/en-us/download/server)
 2. Move the downloaded java (server.jar) into the *MC Server* folder within the *Minecraft-Dashboard-Admin-Tools* folder
 3. Right-Click on the *MC Server* folder and click on *Open in terminal*
-4. Type in command *java -Xmx1024M -Xms1024M -jar minecraft_server.1.21.8.jar nogui* to run the server, it will stop before continuing at first as you need to edit the EULA file.
+4. Type in command *java -Xmx1024M -Xms1024M -jar server.jar nogui* to run the server, it will stop before continuing at first as you need to edit the EULA file.
 5. Navigate back to the *MC Server* folder in your file explorer, **Do not close the terminal yet, as it will still be needed**
 6. Open the eula.txt file and change *eula=false* to *eula=true*
 7. Go back to the terminal and re-run the command (you can just press the up arrow to navigate through past commands and then press enter to run them)
