@@ -1,11 +1,11 @@
 # Minecraft-Dashboard-Admin-Tools
 Minecraft Dashboard &amp; Admin Tools (M.D.A.T) is a web-based management site for managing your Minecraft server(s), including users, mods and other files.
 
-# Usage:
+<!--# Usage:
 ***All instructions are written assuming you are using windows. Linux instructions will come later, MacOS instruction will not be written as I can't verify the instructions work.***
 ```bash
 curl -s https://raw.githubusercontent.com/username/repo/branch/script.sh | bash   
-```
+```-->
 
 ## Pre-Requisites:
 If you encounter an errors with any of these steps, please refer yourself to te correct documentation that will be linked at the end of the instructions.
